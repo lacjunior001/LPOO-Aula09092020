@@ -12,6 +12,7 @@ public class App {
         for (int i = 0; i < 5; i++) {
             criarBola(i);
         }
+
         System.out.println("Bem Vindo ao Game Acerte as Bolas.");
         System.out.println("O Jogador tem 10 chances de acertar as bolas que estão distribuidas em 25 Posições.");
         System.out.println("Insira a linha/coluna e descubra onde está escondida a bola.");
@@ -86,7 +87,7 @@ public class App {
         int cont = 0;
 
         do {
-            if (tabuleiro[i] == null) {
+            if ((tabuleiro[i] == null) && (cont == i)) {
                 break;
             } else if (tabuleiro[cont].acerta(posX, posY)) {
                 posX = rand.nextInt(5);
