@@ -112,7 +112,7 @@ public class App {
         z = scan.nextInt();
 
         while (z < 1 || z > 5) {
-            System.out.print("Apenas numeros entre 1 e 5 são Aceitos.\nDigite Novamente: ");
+            System.out.print("Apenas números entre 1 e 5 são Aceitos.\nDigite Novamente: ");
             z = scan.nextInt();
         }
         z--;
@@ -120,6 +120,13 @@ public class App {
     }
 
     public static void criaGrafico() {
+
+        for (int i = 1; i < tentativas.length; i++) {
+            for (int j = 1; j < tentativas.length; j++) {
+                tentativas[i][j] = "||||| ";
+            }
+        }
+
         tentativas[0][0] = "     |";
         tentativas[0][1] = "  1  |";
         tentativas[0][2] = "  2  |";
@@ -127,36 +134,10 @@ public class App {
         tentativas[0][4] = "  4  |";
         tentativas[0][5] = "  5  |";
         tentativas[1][0] = "  1   ";
-        tentativas[1][1] = "||||| ";
-        tentativas[1][2] = "||||| ";
-        tentativas[1][3] = "||||| ";
-        tentativas[1][4] = "||||| ";
-        tentativas[1][5] = "||||| ";
         tentativas[2][0] = "  2   ";
-        tentativas[2][1] = "||||| ";
-        tentativas[2][2] = "||||| ";
-        tentativas[2][3] = "||||| ";
-        tentativas[2][4] = "||||| ";
-        tentativas[2][5] = "||||| ";
         tentativas[3][0] = "  3   ";
-        tentativas[3][1] = "||||| ";
-        tentativas[3][2] = "||||| ";
-        tentativas[3][3] = "||||| ";
-        tentativas[3][4] = "||||| ";
-        tentativas[3][5] = "||||| ";
         tentativas[4][0] = "  4   ";
-        tentativas[4][1] = "||||| ";
-        tentativas[4][2] = "||||| ";
-        tentativas[4][3] = "||||| ";
-        tentativas[4][4] = "||||| ";
-        tentativas[4][5] = "||||| ";
         tentativas[5][0] = "  5   ";
-        tentativas[5][1] = "||||| ";
-        tentativas[5][2] = "||||| ";
-        tentativas[5][3] = "||||| ";
-        tentativas[5][4] = "||||| ";
-        tentativas[5][5] = "||||| ";
-
     }
 
     public static void exibTentativas() {

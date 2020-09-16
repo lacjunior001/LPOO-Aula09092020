@@ -35,7 +35,6 @@ public class Bola {
         }
     }
 
-
     public Bola(int posX, int posY) {
         this.posx = posX;
         this.posy = posY;
